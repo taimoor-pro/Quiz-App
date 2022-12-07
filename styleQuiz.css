@@ -1,0 +1,22 @@
+*{
+  font-family: "kanit", sans-serif;
+}
+.bgDark{
+  background-color: #001d3d;
+}
+
+.bgTransparentColor{
+  background-color: rgba(0, 0, 0, 0.292);
+}
+
+.showResult{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}

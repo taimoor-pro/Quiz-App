@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="styleQuiz.css">
+</head>
+
+<body class="bgDark">
+  <div class="p-5">
+    <h1 class="text-center textLight border-bottom border-warning m-3 text-warning bgTransparentColor">Quiz App</h1>
+  </div>
+
+  <div>
+    <p class="fs-6 text-center text-white">Question No:
+      <!-- <span class="fs-3">currentQuesionNo(5)</span>
+      <span class="fs-5">/outoff(10)</span> -->
+      <span class="fs-3" id="curentQuesionNo"></span>
+      <span class="fs-3">/</span>
+      <span class="fs-5" id="totalQuesionNo"></span>
+    </p>
+    <div class="bgTransparentColor shadow">
+      <p class="fs-1 textLight text-center text-warning" id="displayQuesion">
+      </p>
+    </div>
+    <div class="conatainer">
+      <div id="optionsDisplay" class="row m-0 p-0">
+        <div class="col-md-6">
+          <div class="py-2">
+            <button class="btn btn-outline-warning w-100">Option 1</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="py-2">
+            <button class="btn btn-outline-warning w-100">Option 2</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="py-2">
+            <button class="btn btn-outline-warning w-100">Option 3</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="py-2">
+            <button class="btn btn-outline-warning w-100">Option 4</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <button onclick="nextQuestion()">Next</button> -->
+    <div id="showResult" class="showResult">
+      <div class="bg-white textDark rounded shadow p-5">
+        <p class="fs-4 fw-bold">Marks: <span id="dmarks"></span></p>
+        <p class="fs-4 fw-bold">Percentage: <span id="dpercentage"></span></p>
+        <p class="fs-4 fw-bold">Status: <span id="dstatus"></span></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="quizApp.js"></script>
+</body>
+
+</html>
